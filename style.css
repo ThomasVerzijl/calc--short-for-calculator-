@@ -1,0 +1,32 @@
+button {
+  width: 100px;
+  height: 100px;
+}
+.button-cont {
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem;
+}
+.button {
+  font-size: 50px;
+  transition-duration: 3s;
+  background-color: #ff0055;
+  cursor: pointer;
+}
+.button:hover {
+  width: 110px;
+  height: 110px;
+  margin-left: 500px;
+  margin-top: 500px;
+  rotate: 900deg;
+  font-size: 400px;
+  animation: kameleon 0.5s infinite linear;
+  transform: scaleX(10);
+}
+@keyframes kameleon {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
